@@ -1,0 +1,209 @@
+/* Yay CSS */
+
+header {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; 
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+header.index {
+    background-image: url(/images/low-poly-texture.png);
+
+}
+
+header.html {
+    background-color: #078AA1;
+}
+
+header.css {
+    background-color: #8da6da;
+}
+
+h1.title{
+    padding: 15vmax;
+    position: relative;
+    font-size: 7vw;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    opacity: 0%;
+    color: rgba(255,255,255,0.85);
+    text-shadow: 5px 5px 8px rgba(0,0,0,0.15);
+    display: inline-block;
+    animation-name: title-ani;
+    animation-duration: 1.3s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    padding: 0.3vh 0;
+}
+
+h2.first-steps {
+    padding: 2vh 8vw;
+}
+
+p {
+    padding: 1em 0;
+    text-align: center;
+    font-size: 24px;
+    font-family: Lato, sans-serif;
+}
+
+p.intro {
+    padding: 5em 1em 5em;
+    text-align: center;
+    font-size: 30px;
+    font-family: Lato, sans-serif;
+}
+
+p.left {
+    text-align: left;
+}
+
+p.right {
+    text-align: right;
+}
+
+li {
+    font-size: 20px;
+    font-family: Lato, sans-serif;
+    margin-left: 5em;
+}
+
+nav a {
+    font-family: Montserrat, sans-serif;
+
+}
+
+.page-buttons {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    background-color: #31752c;
+    padding: 2vh;
+}
+
+.button {
+    border: none;
+    background-color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2vw;
+    font-family: Montserrat, sans-serif;
+    margin: 4px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+a.button {
+    color: black;
+}
+
+a.button:hover {
+    color: white;
+}
+
+.button-home {
+    border: 2px solid #dda3db;
+}
+
+.button-html {
+    border: 2px solid #078AA1;
+}
+
+.button-css {
+    border: 2px solid #8da6da;
+}
+
+.button-home:hover {
+    background-color: #dda3db;
+}
+.button-html:hover {
+    background-color: #078AA1;
+  }
+
+.button-css:hover {
+    background-color: #8da6da;
+}
+
+@media (max-width: 720px) {
+    p, p.intro {
+        font-size: 2vw
+    }
+    h2 {
+        font-size: 2.5vw
+    }
+}
+.green {
+    background-color: rgb(127, 216, 85);
+    justify-self: center;
+    align-self: center;
+    grid-template-columns: 100%;
+    display: inline-block;
+}
+
+.read-more {
+    background-color: #1a948a;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    padding: 5em;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-container-reverse {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-items: center;
+    align-items: center;
+}
+
+.left-align {
+    justify-self: start;
+}
+
+.right-align {
+    justify-self: end;
+    text-align: right;
+}
+
+h2#normalh2 {
+    padding: 0;
+    font-weight: normal;
+}
+
+h1#normalh1, h2#normalh2, h3, h4, h5, h6 {
+    padding-left: 150px;
+    font-family: Lato;
+}
+
+@keyframes title-ani {
+    0% {
+        opacity: 0%;
+        top: 12px;
+
+    }
+    100% {
+        opacity: 100%;
+        top: 0px;
+    }
+}
